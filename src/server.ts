@@ -1,5 +1,6 @@
-import app from "./app.js";
-import { PORT } from "./config/index.js";
+import app from './app.js';
+import Config from './config/index.js';
+import logger from './config/logger.js';
 
 
-app.listen(PORT, ()=> console.log("server is running on localhost:",PORT))
+app.listen(Config.PORT, () => logger.info("Server is running", {port: Config.PORT}));

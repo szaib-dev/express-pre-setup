@@ -1,2 +1,4 @@
 pnpm lint:check
 pnpm pr:fix
+pnpm run dev
+pnpm test
